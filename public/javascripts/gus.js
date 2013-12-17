@@ -1,25 +1,39 @@
-(function() {
+//(function() {
+
+	var TabModel = Backbone.Model.extend({
+
+		defaults: {
+			currentTab: 'about',
+			tabs: ['about', 'projects', 'resume']
+		}
+
+	});
 
 	var AppView = Backbone.View.extend({
 
 		initialize: function() {
-			console.log('init');
+			this.listenTo(this.model, 'change:currentTab', this.setTab);
+			this.setTab(this.model);
 		},
 
-		el: '#main',
+		el: 'body',
 
 		events: {
-			'click .section-link' : 'swap',
-			
+			'click .section-link' : 'sectionClick'
 		},
 
-		swap: function(e) {
+		sectionClick: function(e) {
 			var sect = $(e.currentTarget).attr('id');
+			this.model.set('currentTab', sect);
+		},
+
+		setTab: function(tab) {
 			$('.shown-section').removeClass('shown-section');
-			$('#' + sect + '-content, #' + sect).addClass('shown-section');
+			$('#' + tab.get('currentTab') + '-content, #' + tab.get('currentTab')).addClass('shown-section');
 		}
 	});
 
-	var appView = new AppView();
+	var tabs = new TabModel({currentTab: 'resume'});	
+	var appView = new AppView({model: tabs});
 
-})();
+//})();
