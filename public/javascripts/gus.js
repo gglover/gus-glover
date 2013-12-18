@@ -28,12 +28,13 @@
 		},
 
 		setTab: function(tab) {
+			
 			$('.shown-section').removeClass('shown-section');
 			$('#' + tab.get('currentTab') + '-content, #' + tab.get('currentTab')).addClass('shown-section');
 		}
 	});
 
-	var tabs = new TabModel({currentTab: 'resume'});	
+	var tabs = new TabModel({currentTab: 'about'});	
 	var appView = new AppView({model: tabs});
 
 //})();
