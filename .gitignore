@@ -1,2 +1,4 @@
 node_modules/
-public/javascripts/libs/
+public/home/javascripts/libs/
+public/pokemon/
+public/td/
