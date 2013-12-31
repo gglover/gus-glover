@@ -1,0 +1,3 @@
+[submodule "public/pokemon"]
+	path = public/pokemon
+	url = https://github.com/gglover/pokemon-palettes.git
