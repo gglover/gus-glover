@@ -4,6 +4,7 @@
 	<head>
 		<title>Gus Glover</title>
 		<meta charset="utf-8" />
+		<meta name="description" content="breaking news: guy does things and puts them on the internet. (Seattle, WA)"/>
 		<link rel="icon" type="image/png" href="shared/favicon.png">
 		<link href="home/stylesheets/gus.css" type="text/css" rel="stylesheet" />
 
@@ -34,12 +35,12 @@
 			<!-- Projects section -->
 			<div id="projects-content">
 				<div class="project bordered-blurb" id="td-multi">
-					<a href="/td"><img src="home/images/td-multi-icon.png"/></a>
+					<a href="/td"><img src="home/images/td-multi-icon.png" alt="Tower defense game demo screenshot"/></a>
 					<a href="/td"><h2>Code Day Seattle: Winter 2012</h2></a>
 					<p>Here's a fun little tower defense game involving cosmonauts and space zombies. It's not quite finished but it turned out great for the 24 hours we put into it. It ended up being a fun foray into ImpactJS. My team won first place ont of 27 groups.</p>
 				</div>
 				<div class="project bordered-blurb" id="pokemon">
-					<a href="/pokemon"><img src="home/images/pokemon-icon.png"/></a>
+					<a href="/pokemon"><img src="home/images/pokemon-icon.png" alt="Pokemon visualization demo screenshot"/></a>
 					<a href="/pokemon"><h2>Pokemon Visualizer</h2></a>
 					<p>I wanted to make something with cool colors; expectations were met.</p>
 				</div>
@@ -134,4 +135,18 @@
 	<script src="home/javascripts/libs/underscore.min.js" rel="text/javascript"></script>
 	<script src="home/javascripts/libs/backbone.min.js" rel="text/javascript"></script>
 	<script src="home/javascripts/gus.js" rel="text/javascript"></script>
+
+	<!-- Analytics blurb -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-46781516-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
 </html>
