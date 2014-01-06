@@ -43,7 +43,7 @@ body {
 	z-index: -20;
 }
 
-dd, ul, h4, p {
+dd, ul, h4, p, footer {
 	font-family: 'open-sans-bold', 'open-sans-extra-bold', sans-serif;
 }
 
@@ -81,6 +81,7 @@ header {
 	margin: 0px 10px;
 	background-color: #DDD;
 	clear: both;
+	overflow: hidden;
 }
 
 #content > div {
@@ -101,6 +102,26 @@ header {
 	padding: 5px 0px 10px 10px;
 }
 
+#content .icon {
+	display: inline-block;
+	float: right;
+	margin: 5px 10px;
+}
+
+#content .icon img {
+	vertical-align: text-bottom;
+}
+
+#content .icon span {
+	vertical-align: super;
+}
+
+.white-banner {
+	background-color: #EEE;
+	border-bottom: 2px solid white;
+	overflow: hidden;
+}
+
 
 
 /* About Section */
@@ -112,6 +133,10 @@ header {
 
 #enjoy {
 	font-size: 16px
+}
+
+#line-1, #line-2, #line-3 {
+	font-family: 'open-sans-bold', 'open-sans-extra-bold', sans-serif;	
 }
 
 
@@ -155,9 +180,7 @@ header {
 	margin-top: 15px;
 	margin-bottom: 5px;
 	padding-left: 15px;
-	background-color: #EEE;
 	font-size: 200%;
-	border-bottom: 2px solid white;
 }
 
 .entry {
@@ -210,7 +233,7 @@ a:visited {
 
 #about:hover, #about.shown-section { border-bottom-color: #A5CCC9; }
 
-#projects:hover, #projects.shown-section { border-bottom-color: #A68543; }
+#projects:hover, #projects.shown-section { border-bottom-color: #E9AD2E; }
 
 #resume:hover, #resume.shown-section { border-bottom-color: #A44249; }
 
