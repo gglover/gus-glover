@@ -1,3 +1,4 @@
-node_modules/
-public/home/javascripts/libs/
-public/td/
+home/javascripts/libs/
+td/
+pokemon/
+sitemap.xml
