@@ -1,3 +1,7 @@
 [submodule "public/pokemon"]
 	path = public/pokemon
 	url = https://github.com/gglover/pokemon-palettes.git
+
+[submodule "public/ear-trainer"]
+	path = public/ear-trainer
+	url = https://github.com/gglover/ear-trainer.git
