@@ -1,7 +1,2 @@
-[submodule "pokemon"]
-	path = pokemon
-	url = https://github.com/gglover/pokemon-palettes.git
 
-[submodule "ear-trainer"]
-	path = ear-trainer
-	url = git@github.com:gglover/ear-trainer.git
+
