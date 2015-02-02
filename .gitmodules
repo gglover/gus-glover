@@ -1,2 +1,12 @@
+[submodule "ear-trainer"]
+	path = projects/ear-trainer
+	url = git://github.com/gglover/ear-trainer.git
 
+[submodule "pokemon-palettes"]
+	path = projects/pokemon-palettes
+	url = git://github.com/gglover/pokemon-palettes.git
+
+[submodule "human-tetris"]
+	path = projects/human-tetris
+	url = git://github.com/gglover/bristol-hack-2015.git
 
