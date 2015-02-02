@@ -5,5 +5,5 @@
 	path = projects/pokemon-palettes
 	url = git://github.com/gglover/pokemon-palettes.git
 [submodule "projects/bristol-hack-2015"]
-	path = projects/bristol-hack-2015
+	path = projects/human-tetris
 	url = git://github.com/gglover/bristol-hack-2015.git
