@@ -11,68 +11,45 @@
 	</head>
 	<body>
 
-
 		<div id="outer">
 
 			<header>
-				<h1>gus glover</h1>
+				<h1><a href="/">gus glover</a></h1>
 				<p><a class="section-link">about</a> | <a class="section-link">projects</a> | <a class="section-link">contact</a></p>
-				<p> ~ ~ ~ </p>
+				<canvas id="main-slider" width="300" height="10"></canvas>
+				<p>~ ~ ~</p>
 			</header>
 
-			<section id="about-section">
-				<p>Lorem ipsum i'm workin hard every day on that grind ay</p>
-			</section>
+				<section id="about-section" class="shown-section">
+					<img id="portrait" src="images/main.jpg"/>	
+					<p>22 seattle, wa: programming and design</p>
+				</section>
 
-			<section id="projects-section">
-				<a href="/projects/pokemon-palettes/">
-					<div class="project-icon" style="background-image:url('/images/pokemon-palettes-icon.png')"></div>
-				</a>
-				<a href="http://twootwith.me/">
-					<div class="project-icon" style="background-image:url('/images/multi-tweet-icon.png')"></div>
-				</a>
-				<a href="/projects/collab-sequencer/">
-					<div class="project-icon" style="background-image:url('/images/collab-sequencer-icon.png')"></div>
-				</a>
-				<a href="/projects/human-tetris/">
-					<div class="project-icon" style="background-image:url('/images/human-tetris-icon.png')"></div>
-				</a>
-				<a href="/projects/ear-trainer/">
-					<div class="project-icon" style="background-image:url('/images/ear-trainer-icon.png')"></div>
-				</a>
-				<a href="/projects/tower-defense/">
-					<div class="project-icon" style="background-image:url('/images/tower-defense-icon.png')"></div>
-				</a>
-				<hr/>
-				<p>
-					<a href="/v1">home_v1</a> | <a href="/v2">home_v2</a>
-				</a>
-			</section>
+				<section id="projects-section">
 
-			<section id="contact-section">
-				<p>
-				<a href="http://www.github.com/gglover">github</a> |
-				<a href="mailto:gglover@uw.edu">gglover@uw.edu</a> | 
-				<a href="http://www.last.fm/user/Asparagus22">last.fm</a>
-				</p>
-			</section>
+					<script type="text/template" id="project-template">
+							<div data-project="<%= name %>" class="project-icon" style="background-image:url('/images/<%= name %>-icon.png')"></div>
+					</script>
+					
+					<!--<p>
+						<a href="/v1">home_v1</a> | <a href="/v2">home_v2</a>
+					</p>-->
+				</section>
 
-			<footer>
-				<div class="color-block"></div>
-				<div class="color-block"></div>
-				<div class="color-block"></div>
-				<div class="color-block"></div>
-				<div class="color-block"></div>
-				<div class="color-block"></div>
-				<div class="color-block"></div>
-				<div class="color-block"></div>
-			</footer>
+				<section id="contact-section">
+					<p>
+					<a href="http://www.github.com/gglover">github</a> |
+					<a href="mailto:gglover@uw.edu">gglover@uw.edu</a> | 
+					<a href="http://www.last.fm/user/Asparagus22">last.fm</a>
+					</p>
+				</section>
 		</div>
 
 	</body>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" rel="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js" rel="text/javascript"></script>
+	<script src="javascripts/section_slider.js" rel="text/javascript"></script>
 	<script src="javascripts/main.js" rel="text/javascript"></script>
 
 	<!-- Analytics blurb -->
