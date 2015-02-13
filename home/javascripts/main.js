@@ -4,7 +4,7 @@ var GUS = {
 
 	initialize: function() {
 		var sectionToShow = GUS.parseSection();
-		GUS.loadSection(sectionToShow);
+		GUS.loadSection('contact');
 		GUS.wireEvents(sectionToShow);
 		GUS.renderProjects();
 	},
@@ -15,12 +15,13 @@ var GUS = {
 
 
 		var links = $('.section-link');
-		var selected = _.findWhere(GUS.sections, {name: sectionToShow});
-		if (selected) { 
-			selected = selected.$el.get(0); 
+		var selected = $('.section-link:contains(' + sectionToShow + ')');
+		if (selected.length) { 
+			selected = selected.get(0); 
 		} else {
 			selected = links[0];
 		}
+
 		$('#main-slider').sectionSlider(links, {initialSection: selected});
 
 	},
