@@ -3,7 +3,7 @@ var GUS = {
 	PROJECTS_PER_ROW: 4,
 
 	initialize: function() {
-		var sectionToShow = 'projects';//GUS.parseSection();
+		var sectionToShow = GUS.parseSection();
 		GUS.loadSection(sectionToShow);
 		GUS.wireEvents(sectionToShow);
 		GUS.renderProjects();
