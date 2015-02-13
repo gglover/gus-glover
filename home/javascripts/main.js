@@ -1,24 +1,32 @@
 var GUS = {
 
+	PROJECTS_PER_ROW: 4,
+
 	initialize: function() {
 		GUS.wireEvents();
 		GUS.loadSection(GUS.parseSection());
 		GUS.renderProjects();
+		GUS.loadSection(GUS.parseSection());
 	},
 
 	wireEvents: function() {
 		$('.section-link').click(GUS.handleSectionChange);
-		$('.project-icon').click(GUS.handleProjectIconClick);
+		$(document).on('sectionMove', GUS.handleProjectChange);
 
-		$('#main-slider').sectionSlider($('.section-link'));
+		$('#main-slider').sectionSlider($('.section-link'), {initialSection: 0});
+
 	},
 
 	handleSectionChange: function(e) {
-		GUS.loadSection($(e.currentTarget).text());
+		var sect = $(e.currentTarget).text();
+		GUS.loadSection(sect);
+		history.replaceState({}, "~ ~ ~", sect);
 	},
 
-	handleProjectIconClick: function(e) {
-
+	handleProjectChange: function(e, section) {
+		if ($(section).hasClass('project-icon')) {
+			GUS.changeProject($(section));
+		}
 	},
 
 
@@ -60,30 +68,57 @@ var GUS = {
 	currentProject: null,
 
 	projects: [
-		{ name:    'pokemon-palettes' },
-		{ name:    'multi-tweet'      },
-		{ name:    'collab-sequencer' },
-		{ name:    'human-tetris'     },
-		{ name:    'ear-trainer'      },
-		{ name:    'tower-defense'    },
+		{ name:        'pokemon-palettes',
+		  description: 'a color palette generator based off of pokemon sprites',
+		  link:        'projects/pokemon-palettes' ,
+		  github:      'https://github.com/gglover/pokemon-palettes' },
+		{ name:    'multi-tweet',    
+		  description: 'collaborative tweet composer with real-time goodies',
+		  link:        'http://twootwith.me',
+		  github:      'https://github.com/gglover/multi-tweet' },
+		{ name:    'human-tetris',  
+		  description: 'html5 implementation of a viral <a href="https://www.youtube.com/watch?v=zL4HSk4MUUw"japanese gameshow</a>',
+		  link:        'projects/human-tetris',
+		  github:      'https://github.com/gglover/bristol-hack-2015' },
+		{ name:    'ear-trainer', 
+		  description: 'youtube looper and metronome for learning songs by ear with less hassle',
+		  link:        'projects/ear-trainer',
+		  github:      'https://github.com/gglover/pokemon-palettes' },
+		{ name:    'collab-sequencer',
+		  description: 'simple music sequencer and chat for composing together or screwin around',
+		  link:        'http://cs.gus-glover.com',
+		  github:      'https://github.com/tangmi/collab-sequencer' },
+		{ name:    'tower-defense',
+		  description: 'tower defense game with an ambiguous setting',
+		  link:        'projects/tower-defense',
+		  github:      'https://github.com/tangmi/td-multi' }
 	],
 
 	templateProject: _.template($('#project-template').text()),
+	templateDescription: _.template($('#description-template').text()),
+
+	changeProject: function($proj) {
+		var $info = $proj.nextAll('p.project-description').first();
+		$info.html(GUS.templateDescription( 
+			_.findWhere(GUS.projects, { name: $proj.data('name') })
+		));
+	},
 
 	renderProjects: function() {
-		var $sect = $('#projects-section');
+		var $sect = $('#main-projects');
 		var row = [];
 		var $proj = null;
 		for (var i = 0; i < GUS.projects.length; i++) {
 
 			$proj = $(GUS.templateProject(GUS.projects[i]));
-			row[i % 3] = $proj;
+			row[i % GUS.PROJECTS_PER_ROW] = $proj;
 			$sect.append($proj);
 
-			if (((i + 1) % 3) == 0) {
-				var $cvs = $('<canvas width="300" height="10"></canvas>');
+			if (((i + 1) % GUS.PROJECTS_PER_ROW) == 0 || i == GUS.projects.length - 1) {
+				var $cvs = $('<canvas width="300" height="10"></canvas><p class="project-description">~ ~ ~</p>');
 				$sect.append($cvs);
 				$cvs.sectionSlider(_.clone(row));
+				row = [];
 			}
 		}
 	}

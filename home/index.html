@@ -15,7 +15,7 @@
 
 			<header>
 				<h1><a href="/">gus glover</a></h1>
-				<p><a class="section-link">about</a> | <a class="section-link">projects</a> | <a class="section-link">contact</a></p>
+				<p id="navigation"><a class="section-link">about</a> | <a class="section-link">projects</a> | <a class="section-link">contact</a></p>
 				<canvas id="main-slider" width="300" height="10"></canvas>
 				<p>~ ~ ~</p>
 			</header>
@@ -28,12 +28,22 @@
 				<section id="projects-section">
 
 					<script type="text/template" id="project-template">
-							<div data-project="<%= name %>" class="project-icon" style="background-image:url('/images/<%= name %>-icon.png')"></div>
+							<div data-name="<%= name %>" class="project-icon" style="background-image:url('/images/<%= name %>-icon.png')"></div>
 					</script>
+					<script type="text/template" id="description-template">
+							<strong><a href="<%= link %>"><%= name %>:</a></strong>
+							<%=description %>
+							<a href="<%= github %>"> ~gh </a>
+					</script>
+
+					<div id="main-projects">
+					</div>
+
+					<hr/>
 					
-					<!--<p>
+					<p>
 						<a href="/v1">home_v1</a> | <a href="/v2">home_v2</a>
-					</p>-->
+					</p>
 				</section>
 
 				<section id="contact-section">
