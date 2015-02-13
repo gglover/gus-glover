@@ -3,8 +3,8 @@ var GUS = {
 	PROJECTS_PER_ROW: 4,
 
 	initialize: function() {
-		var sectionToShow = GUS.parseSection();
-		GUS.loadSection('contact');
+		var sectionToShow = 'projects';//GUS.parseSection();
+		GUS.loadSection(sectionToShow);
 		GUS.wireEvents(sectionToShow);
 		GUS.renderProjects();
 	},
@@ -134,4 +134,4 @@ var GUS = {
 
 }
 
-GUS.initialize();
+$(document).ready(GUS.initialize);
