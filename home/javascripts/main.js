@@ -3,17 +3,25 @@ var GUS = {
 	PROJECTS_PER_ROW: 4,
 
 	initialize: function() {
-		GUS.wireEvents();
-		GUS.loadSection(GUS.parseSection());
+		var sectionToShow = GUS.parseSection();
+		GUS.loadSection(sectionToShow);
+		GUS.wireEvents(sectionToShow);
 		GUS.renderProjects();
-		GUS.loadSection(GUS.parseSection());
 	},
 
-	wireEvents: function() {
+	wireEvents: function(sectionToShow) {
 		$('.section-link').click(GUS.handleSectionChange);
 		$(document).on('sectionMove', GUS.handleProjectChange);
 
-		$('#main-slider').sectionSlider($('.section-link'), {initialSection: 0});
+
+		var links = $('.section-link');
+		var selected = _.findWhere(GUS.sections, {name: sectionToShow});
+		if (selected) { 
+			selected = selected.$el.get(0); 
+		} else {
+			selected = links[0];
+		}
+		$('#main-slider').sectionSlider(links, {initialSection: selected});
 
 	},
 

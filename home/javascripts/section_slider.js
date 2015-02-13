@@ -117,7 +117,7 @@
         render();
 
         if (opts != null && opts.initialSection != null) {
-        	moveSection(sections[opts.initialSection]);
+        	moveSection(opts.initialSection);
         }
 
     };
