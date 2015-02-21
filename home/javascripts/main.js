@@ -68,7 +68,7 @@ var GUS = {
 		var parser = document.createElement('a');
 		parser.href = document.location.href;
 
-		return parser.pathname.replace(/\//g,"");
+		return parser.pathname.replace(/\//g,"") || "about";
 	},
 
 
@@ -126,7 +126,8 @@ var GUS = {
 			if (((i + 1) % GUS.PROJECTS_PER_ROW) == 0 || i == GUS.projects.length - 1) {
 				var $cvs = $('<canvas width="300" height="10"></canvas><p class="project-description">~ ~ ~</p>');
 				$sect.append($cvs);
-				$cvs.sectionSlider(_.clone(row));
+				$cvs.sectionSlider(_.clone(row), {initialSection: row[0]});
+				GUS.changeProject($(row[0]));
 				row = [];
 			}
 		}

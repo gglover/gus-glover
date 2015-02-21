@@ -1,6 +1,6 @@
 body {
 	margin: 0px;
-	background-color: #666666;
+	background-color: #343434;
 }
 
 p {
@@ -30,7 +30,8 @@ h1 {
 
 	text-align: center;
 
-	border-top: none;
+	border: 5px solid #666;
+	border-style: outset;
 
 	background-color: white;
 }
@@ -49,8 +50,10 @@ section {
 	visibility: visible;
 }
 
-#portrait {
+.portrait {
 	width: 180px;
+	border: 3px solid #666;
+	border-style: outset;
 
 }
 
@@ -86,6 +89,7 @@ footer {
 .color-block:nth-of-type(8) { background-color: pink; }*/
 
 .project-icon {
+	cursor: pointer;
 	width: 65px;
 	height: 65px;
 	margin: 2px 2px 0px 2px;
