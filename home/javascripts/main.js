@@ -7,11 +7,13 @@ var GUS = {
 		GUS.loadSection(sectionToShow);
 		GUS.wireEvents(sectionToShow);
 		GUS.renderProjects();
+		 //document.querySelector('video').playbackRate = 0.5;
 	},
 
 	wireEvents: function(sectionToShow) {
 		$('.section-link').click(GUS.handleSectionChange);
 		$(document).on('sectionMove', GUS.handleProjectChange);
+		$(document).mousemove(GUS.handlePerspectiveChange);
 
 
 		var links = $('.section-link');
@@ -36,6 +38,23 @@ var GUS = {
 		if ($(section).hasClass('project-icon')) {
 			GUS.changeProject($(section));
 		}
+	},
+
+	handlePerspectiveChange: function(e){
+
+		var w = $(document).width();
+		var h = $(document).height();
+
+		var Xperc = e.pageX / w;
+		var Yperc = e.pageY / h;
+
+		var xRotation = Math.floor(70 * (Xperc - 0.5));
+		var yRotation = -1.0 * Math.floor(70 * (Yperc - 0.5));
+
+		if ($("#outer-front").is(':hover')) { xRotation = 0; yRotation = 0; }
+
+		var $box = $('#three-d-content');
+		$box.css({transform: 'rotateY(' + xRotation + 'deg) rotateX(' + yRotation + 'deg)' });
 	},
 
 
@@ -136,3 +155,14 @@ var GUS = {
 }
 
 $(document).ready(GUS.initialize);
+
+
+
+
+
+
+
+
+
+
+

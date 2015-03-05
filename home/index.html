@@ -10,50 +10,64 @@
 		<link href="gus.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
+		<!--<div id="video-overlay"></div>
+		<video src="static.ogg" autoplay loop>
+			oops
+		</video>-->
+		<div id="view">
+			<div id="three-d-content">
+				<div id="outer-front">
+					<div id="outer">
 
-		<div id="outer">
+						<header>
+							<h1>gus glover</h1>
+							<p id="navigation"><a class="section-link">about</a> | <a class="section-link">projects</a> | <a class="section-link">contact</a></p>
+							<canvas id="main-slider" width="300" height="10"></canvas>
+							<p>~ ~ ~</p>
+						</header>
 
-			<header>
-				<h1>gus glover</h1>
-				<p id="navigation"><a class="section-link">about</a> | <a class="section-link">projects</a> | <a class="section-link">contact</a></p>
-				<canvas id="main-slider" width="300" height="10"></canvas>
-				<p>~ ~ ~</p>
-			</header>
+						<section id="about-section">
+							<img class="portrait" src="images/main.png"/>	
+							<p>22 m seattle</p>
+						</section>
 
-				<section id="about-section">
-					<img class="portrait" src="images/main.png"/>	
-					<p>22 m seattle</p>
-				</section>
+						<section id="projects-section">
 
-				<section id="projects-section">
+							<script type="text/template" id="project-template">
+									<div data-name="<%= name %>" class="project-icon" style="background-image:url('/images/<%= name %>-icon.png')"></div>
+							</script>
+							<script type="text/template" id="description-template">
+									<strong><a href="<%= link %>"><%= name %>:</a></strong>
+									<%=description %>
+									<a href="<%= github %>"> ~gh </a>
+							</script>
 
-					<script type="text/template" id="project-template">
-							<div data-name="<%= name %>" class="project-icon" style="background-image:url('/images/<%= name %>-icon.png')"></div>
-					</script>
-					<script type="text/template" id="description-template">
-							<strong><a href="<%= link %>"><%= name %>:</a></strong>
-							<%=description %>
-							<a href="<%= github %>"> ~gh </a>
-					</script>
+							<div id="main-projects">
+							</div>
 
-					<div id="main-projects">
+							<hr/>
+							
+							<p>
+								<a href="/v1">home_v1</a> | <a href="/v2">home_v2</a>
+							</p>
+						</section>
+
+						<section id="contact-section">
+							<img class="portrait" src="images/contact-2.png"/>	
+							<p>
+							<a href="http://www.github.com/gglover">github</a> |
+							<a href="mailto:gglover@uw.edu">gglover@uw.edu</a> | 
+							<a href="http://www.last.fm/user/Asparagus22">last.fm</a>
+							</p>
+						</section>
 					</div>
-
-					<hr/>
-					
-					<p>
-						<a href="/v1">home_v1</a> | <a href="/v2">home_v2</a>
-					</p>
-				</section>
-
-				<section id="contact-section">
-					<img class="portrait" src="images/contact.png"/>	
-					<p>
-					<a href="http://www.github.com/gglover">github</a> |
-					<a href="mailto:gglover@uw.edu">gglover@uw.edu</a> | 
-					<a href="http://www.last.fm/user/Asparagus22">last.fm</a>
-					</p>
-				</section>
+				</div>
+				<div id="outer-right"></div>
+				<div id="outer-left"></div>
+				<div id="outer-top"></div>
+				<div id="outer-bottom"></div>
+				<div id="outer-back"></div>
+			</div>
 		</div>
 
 	</body>

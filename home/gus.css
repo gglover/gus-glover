@@ -1,6 +1,43 @@
 body {
 	margin: 0px;
-	background-color: #343434;
+	background-color: black;
+}
+
+video, #video-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#video-overlay {
+	width: 100%;
+	height: 100%;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 10%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 65%, rgba(0,0,0,0.5) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0.5)), color-stop(35%,rgba(0,0,0,1)), color-stop(65%,rgba(0,0,0,1)), color-stop(90%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 10%,rgba(0,0,0,1) 35%,rgba(0,0,0,1) 65%,rgba(0,0,0,0.5) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 10%,rgba(0,0,0,1) 35%,rgba(0,0,0,1) 65%,rgba(0,0,0,0.5) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 10%,rgba(0,0,0,1) 35%,rgba(0,0,0,1) 65%,rgba(0,0,0,0.5) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 10%,rgba(0,0,0,1) 35%,rgba(0,0,0,1) 65%,rgba(0,0,0,0.5) 90%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+	z-index: 5;
+}
+
+#outer {
+	background-image: url(/images/bg.png);
+
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+	
+	box-sizing: border-box;
+
+    padding-top: 10px;
+
+	text-align: center;
+
+	background-color: white;
 }
 
 p {
@@ -17,27 +54,8 @@ h1 {
 	margin-bottom: -5px;
 }
 
-#outer {
-	position: relative;
-	
-    margin-top: 10%;
-    padding-top: 10px;
-
-    margin-left: auto;
-    margin-right: auto;
-	width: 300px;
-	height: 450px;
-
-	text-align: center;
-
-	border: 5px solid #666;
-	border-style: outset;
-
-	background-color: white;
-}
-
 section {
-	background-color: white;
+	background-color: rgba(0,0,0,0);
 	box-sizing: border-box;
 	position: absolute;
 	width: 100%;
@@ -52,9 +70,6 @@ section {
 
 .portrait {
 	width: 180px;
-	border: 3px solid #666;
-	border-style: outset;
-
 }
 
 .section-link, a {
@@ -110,62 +125,64 @@ footer {
 	height: 26px;
 }
 
-/*#main-section { 
-	transform: translateZ(150px);
-}
 
-#about-section { 
-	transform: rotateY(90deg) translateX(150px);
-	transform-origin: center right;
-}
-
-#projects-section { 
-	transform: rotateY(0deg) translateZ(-150px); 
-}
-
-#contact-section { 
-	transform: rotateY(-90deg) translateX(-150px);
-	transform-origin: center left;
-}
-
-@keyframes spin {
-	from { transform: rotateY(0); }
-	to { transform: rotateY(360deg); }
-}
-
-@-webkit-keyframes spin {
-	from { transform: rotateY(0); }
-	to { transform: rotateY(360deg); }
-}
-
-#containers {
-	position: relative;
-
-	width: auto;
-
-    animation-name: spin;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
-
-    -webkit-animation-name: spin;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 20s;
-
-    transform-style: preserve-3d;
-    width: 300px;
-}
-
-#outer:hover #containers {
-	animation-play-state: paused;
-	-webkit-animation-play-state: paused;
-}
+/* 3D stuff */
 
 #view {
-	perspective: 1000px;
-    perspective-origin: 50% 300px;
-}*/
+}
+
+#three-d-content {
+	position: relative;
+	width: 300px;
+	margin: 80px auto;
+
+    transform-style: preserve-3d;
+
+    transition: transform 0.2s;
+}
+
+#three-d-content > div {
+	position: absolute;
+	background-repeat: repeat;
+}
+
+#outer-front {
+	width: 300px;
+	height: 450px;
+}
+#outer-right { 
+	background-image: url(/images/bg4.png);
+	transform-origin: top left;
+	transform: translateX(300px) rotateY(-270deg);
+	height: 450px;
+	width: 70px;
+}
+#outer-left { 
+	background-image: url(/images/bg3.png);
+	transform: rotateY(270deg) translateZ(70px);
+	transform-origin: top right;
+	height: 450px;
+	width: 70px;
+}
+#outer-back { 
+	transform: translateZ(-70px);
+	width: 300px;
+	height: 450px;
+}
+#outer-top {
+	background-image: url(/images/bg2.png);
+	transform: rotateX(270deg);
+	transform-origin: center top;
+	width: 300px;
+	height: 70px;
+}
+#outer-bottom {
+	background-image: url(/images/bg2.png);
+	transform: translateY(450px) rotateX(-90deg);
+	transform-origin: center top;
+	width: 300px;
+	height: 70px;
+}
 
 
 
