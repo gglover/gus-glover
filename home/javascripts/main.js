@@ -7,6 +7,7 @@ var GUS = {
 		GUS.loadSection(sectionToShow);
 		GUS.wireEvents(sectionToShow);
 		GUS.renderProjects();
+		GUS.changeBackground('cubes');
 		 //document.querySelector('video').playbackRate = 0.5;
 	},
 
@@ -14,6 +15,7 @@ var GUS = {
 		$('.section-link').click(GUS.handleSectionChange);
 		$(document).on('sectionMove', GUS.handleProjectChange);
 		$(document).mousemove(GUS.handlePerspectiveChange);
+		$('.bg-control').click(GUS.handleBackgroundChange);
 
 
 		var links = $('.section-link');
@@ -40,6 +42,10 @@ var GUS = {
 		}
 	},
 
+	handleBackgroundChange: function(e) {
+		GUS.changeBackground($(e.currentTarget).data('bg'));
+	},
+
 	handlePerspectiveChange: function(e){
 
 		var w = $(document).width();
@@ -48,8 +54,8 @@ var GUS = {
 		var Xperc = e.pageX / w;
 		var Yperc = e.pageY / h;
 
-		var xRotation = Math.floor(70 * (Xperc - 0.5));
-		var yRotation = -1.0 * Math.floor(70 * (Yperc - 0.5));
+		var xRotation = Math.floor(30 * (Xperc - 0.5));
+		var yRotation = -1.0 * Math.floor(50 * (Yperc - 0.5));
 
 		if ($("#outer-front").is(':hover')) { xRotation = 0; yRotation = 0; }
 
@@ -88,6 +94,12 @@ var GUS = {
 		parser.href = document.location.href;
 
 		return parser.pathname.replace(/\//g,"") || "about";
+	},
+
+	changeBackground: function(name) {
+		$('.bg-control.selected').removeClass('selected');
+		$('.bg-control[data-bg="' + name + '"]').addClass('selected');
+		BG_MANAGER.load(name);
 	},
 
 
