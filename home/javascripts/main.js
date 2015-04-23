@@ -7,16 +7,16 @@ var GUS = {
 		GUS.loadSection(sectionToShow);
 		GUS.wireEvents(sectionToShow);
 		GUS.renderProjects();
-		GUS.changeBackground('cubes');
-		 //document.querySelector('video').playbackRate = 0.5;
+		GUS.setContentBounds();
+		GUS.changeBackground('boring');
 	},
 
 	wireEvents: function(sectionToShow) {
 		$('.section-link').click(GUS.handleSectionChange);
 		$(document).on('sectionMove', GUS.handleProjectChange);
-		$(document).mousemove(GUS.handlePerspectiveChange);
 		$('.bg-control').click(GUS.handleBackgroundChange);
 
+		$(window).resize(GUS.setContentBounds);
 
 		var links = $('.section-link');
 		var selected = $('.section-link:contains(' + sectionToShow + ')');
@@ -27,7 +27,6 @@ var GUS = {
 		}
 
 		$('#main-slider').sectionSlider(links, {initialSection: selected});
-
 	},
 
 	handleSectionChange: function(e) {
@@ -46,18 +45,45 @@ var GUS = {
 		GUS.changeBackground($(e.currentTarget).data('bg'));
 	},
 
+	setContentBounds: function(e) {
+		GUS.bounds = $('#outer-front')[0].getBoundingClientRect();
+	},
+
+	contentBounds: null,
 	handlePerspectiveChange: function(e){
 
 		var w = $(document).width();
 		var h = $(document).height();
+		var x = e.pageX;
+		var y = e.pageY;
 
-		var Xperc = e.pageX / w;
-		var Yperc = e.pageY / h;
+		var bounds = GUS.bounds; //$('#outer-front')[0].getBoundingClientRect();
 
-		var xRotation = Math.floor(30 * (Xperc - 0.5));
-		var yRotation = -1.0 * Math.floor(50 * (Yperc - 0.5));
 
-		if ($("#outer-front").is(':hover')) { xRotation = 0; yRotation = 0; }
+		/*if (x <= bounds.left) {
+			xPerc = 0.5 * (x / bounds.left);
+		} else if (x > bounds.left && x <= bounds.right) {
+			xPerc = 0.5;
+		} else {
+			xPerc = 0.5 + (((x - bounds.right) / (w - bounds.right)) * 0.5);
+		}
+
+		if (y <= bounds.top) {
+			yPerc = 0.5 * (y / bounds.top);
+		} else if (y > bounds.top && y <= bounds.bottom) {
+			yPerc = 0.5;
+		} else {
+			yPerc = 0.5 + (((y - bounds.bottom) / (h - bounds.bottom)) * 0.5);
+		}
+
+		console.info(y, bounds.top);*/
+
+		var xRotation = Math.floor(50 * (x / (w * 1.0) - 0.5));
+		var yRotation = -1.0 * Math.floor(50 * (y / (h * 1.0) - 0.5));
+
+		if ((x > bounds.left) && (x < bounds.right) && (y > bounds.top) && (y < bounds.bottom)) {
+			xRotation = yRotation = 0;
+		}
 
 		var $box = $('#three-d-content');
 		$box.css({transform: 'rotateY(' + xRotation + 'deg) rotateX(' + yRotation + 'deg)' });

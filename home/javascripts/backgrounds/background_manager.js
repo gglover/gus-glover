@@ -6,7 +6,6 @@ var BG_MANAGER = {
 	load: function(name) {
 		var background = BG_MANAGER.backgrounds[name];
 		var current = BG_MANAGER.current;
-
 		if (!background) {
 			$.getScript('javascripts/backgrounds/' + name + '.js');
 		} else {

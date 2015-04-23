@@ -1,9 +1,9 @@
-[submodule "projects/ear-trainer"]
-	path = projects/ear-trainer
+[submodule "home/projects/ear-trainer"]
+	path = home/projects/ear-trainer
 	url = git://github.com/gglover/ear-trainer.git
-[submodule "projects/pokemon-palettes"]
-	path = projects/pokemon-palettes
+[submodule "home/projects/pokemon-palettes"]
+	path = home/projects/pokemon-palettes
 	url = git://github.com/gglover/pokemon-palettes.git
-[submodule "projects/bristol-hack-2015"]
-	path = projects/human-tetris
+[submodule "home/projects/human-tetris"]
+	path = home/projects/human-tetris
 	url = git://github.com/gglover/bristol-hack-2015.git

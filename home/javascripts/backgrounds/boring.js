@@ -3,13 +3,13 @@ BG_MANAGER.addModule('boring', {
 	initialize: function() {},
 
 	$bg: $('#boring-bg'),
-	
+
 	show: function() {
-		this.$bg.show(); 
+		this.$bg.addClass('shown'); 
 	},
 
 	hide: function() {
-		this.$bg.hide();
+		this.$bg.removeClass('shown');
 	}
 
 });
