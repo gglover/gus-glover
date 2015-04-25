@@ -136,7 +136,7 @@ var GUS = {
 	projects: [
 		{ name:        'pokemon-palettes',
 		  description: 'a color palette generator based off of pokemon sprites',
-		  link:        'projects/pokemon-palettes' ,
+		  link:        'http://pokepalettes.com' ,
 		  github:      'https://github.com/gglover/pokemon-palettes' },
 		{ name:    'multi-tweet',    
 		  description: 'collaborative tweet composer with real-time goodies',
