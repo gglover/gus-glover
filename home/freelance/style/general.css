@@ -1,0 +1,199 @@
+
+@font-face {
+	font-family: "Uni Sans";
+	src: url("uni-sans.thin-caps.otf") format("opentype");
+}
+
+@-webkit-keyframes header-fade {
+    from {
+    	margin-top: 13%;
+    	opacity: 0.0;
+    }
+
+    to { 
+    	margin-top: 12%;
+    	opacity: 1;
+    }
+} 
+ 
+@keyframes header-fade {
+    from {
+    	margin-top: 13%;
+    	opacity: 0.0;
+    }
+
+    to { 
+    	margin-top: 12%;
+    	opacity: 1;
+    }
+}
+
+#title-box {
+	-webkit-animation-name: header-fade;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.5s;
+
+    animation-name: header-fade;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+
+
+
+
+
+body {
+	background-color: white;
+	position: relative;
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, serif;
+}
+
+header, section {
+	background-color: white;
+}
+
+header {
+	background-image: url(../images/king_street_banner_small.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 0; 
+    min-height: 400px;
+	background-size: cover;
+	height: 40vw;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#title-box {
+	display: inline-block;
+	width: intrinsic;
+	margin: auto;
+    margin-top: 12%;
+    border-top: 1px solid white;
+    border-bottom: 20px solid white;
+    border-top-left-radius: 50px 3px;
+    border-top-right-radius: 50px 3px;
+    color: white;
+    padding: 20px 20px;
+}
+
+#title-box h1 {
+	font-size: 55px;
+	letter-spacing: 15px;
+	font-family: "Uni Sans";
+	margin-bottom: 0px;
+}
+
+#title-box p {
+	margin-bottom: 0px;
+	font-weight: 200;
+	letter-spacing: 2px;
+}
+
+main {
+	margin: 0 10%;
+	padding: 0 10%;
+	background-color: white;
+}
+
+@media (max-width: 400px) {
+	main {
+		margin: 0 5%;
+		padding: 0;
+	}
+}
+
+section {
+	padding: 10px 10px 10px 10px;
+	background-color: white;
+	overflow: auto;
+}
+
+.section-title {
+	position: relative;
+}
+
+.section-title::after {
+  border-bottom: 1.5px solid #aaa;
+  border-top: 1.5px solid #aaa;
+  content: '';
+  height: 7px;
+  position: absolute;
+  top: 1.75em;
+  width: 100vw;
+  margin-left: 10px;
+  top: 22px;
+}
+
+.section-break {
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+}
+
+.section-break img {
+	width: 100%;
+	margin-top: -40px;
+}
+
+dt {
+	margin: 10px 0 2px 0;
+	font-size: 16px;
+}
+dd {
+	border-left: 1px solid #999;
+	padding-left: 8px;
+	border-radius: 3px / 30px;
+}
+
+ul {
+	list-style-type: square;
+}
+
+em {
+	text-align: center;
+}
+
+.project {
+	margin: 10px;
+	float: left;
+}
+
+#email-button {
+	width: 200px;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+#email-button div {
+	-webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 15px;
+	color: black;
+}
+
+#email-button div:hover {
+	background-color: #777;
+	color: white;
+
+}
+
+section:last-of-type {
+	margin-bottom: 40px;
+}
+
+#copyright {
+	text-align: right;
+	font-size: 14px;
+	margin-bottom: 20px;
+}

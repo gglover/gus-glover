@@ -8,7 +8,7 @@ var GUS = {
 		GUS.wireEvents(sectionToShow);
 		GUS.renderProjects();
 		GUS.setContentBounds();
-		GUS.changeBackground('boring');
+		GUS.changeBackground('ascii');
 	},
 
 	wireEvents: function(sectionToShow) {

@@ -8,12 +8,12 @@ BG_MANAGER.addModule('cubes', {
 
 		var rectAppendFn = _.bind(function rectAppend() {
 			var rect = {
-				x: this.randInt($(window).width(), -100),
-				y: this.randInt($(window).height(), -100),
-				z: this.randInt(850, -1000),
-				depth: this.randInt(300, 30),
-				width: this.randInt(300, 30),
-				height: this.randInt(300, 30),
+				x: this.randInt($(window).width(), -400),
+				y: this.randInt($(window).height(), -400),
+				z: this.randInt(850, -2000),
+				depth: this.randInt(400, 30),
+				width: this.randInt(400, 30),
+				height: this.randInt(400, 30),
 				background: '/images/backgrounds/cube' + this.randInt(1, 3) + '.png'
 			};
 
