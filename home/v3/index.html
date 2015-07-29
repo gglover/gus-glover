@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>gus glover</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="seattle, wa | i'm the gus for the job | yee"/>
+		<meta name="google-site-verification" content="h3CoZg9aQ_DnwkQV_JXchf0ZPLKwwDiTibIMx9V5wrc" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link href="general.css" type="text/css" rel="stylesheet" />
+		<link href="backgrounds.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="boring-bg" class="bg-content"></div>
+		<div id="ascii-bg" class="bg-content"></div>
+		<div id="cubes-bg" class="bg-content">
+			<script type="text/template" id="cube-template">
+				<div class="rect-side" 
+					 style="top: <%= y %>px;
+					 		left: <%= x %>px;
+					 		width: <%= width %>px;
+					 		height: <%= height %>px;
+					 		transform: translateZ(<%= depth / 2 + z%>px);
+					 		background-image: url(<%= background %>);">
+				</div>
+				<div class="rect-side" 
+					 style="top: <%= y %>px;
+					 		left: <%= x %>px;
+					 		transform: rotateX(90deg) translateZ(<%= depth / 2 %>px) translateY(<%= z %>px);
+					 		width: <%= width %>px;
+					 		height: <%= depth %>px;
+					 		background-image: url(<%= background %>);">
+				</div>
+				<div class="rect-side" 
+					 style="top: <%= y %>px;
+					 		left: <%= x %>px;
+					 		transform: rotateY(-90deg) translateZ(<%= depth / 2 %>px) translateX(<%= z %>px);
+					 		width: <%= depth %>px;
+					 		height: <%= height %>px;
+					 		background-image: url(<%= background %>);">
+				</div>
+				<div class="rect-side" 
+					 style="top: <%= y %>px;
+					 		left: <%= x %>px;
+					 		transform: rotateY(90deg) translateZ(<%= width - (depth / 2) %>px) translateX(<%= -z %>px);
+					 		width: <%= depth %>px;
+					 		height: <%= height %>px;
+					 		background-image: url(<%= background %>);">
+				</div>
+				<div class="rect-side" 
+					 style="top: <%= y %>px;
+					 		left: <%= x %>px;
+					 		transform: rotateX(-90deg) translateZ(<%=height - (depth / 2) %>px) translateY(<%= -z %>px);
+					 		width: <%= width %>px;
+					 		height: <%= depth %>px;
+					 		background-image: url(<%= background %>);">
+				</div>
+				<div class="rect-side" 
+					 style="top: <%= y %>px;
+					 		left: <%= x %>px;
+					 		transform: rotateX(180deg) translateZ(<%= depth / 2  - z %>px);
+					 		width: <%= width %>px;
+					 		height: <%= height %>px;
+					 		background-image: url(<%= background %>);">
+				</div>
+			</script>
+			
+		</div>
+
+		<div id="view">
+			<div id="three-d-content">
+				<div id="outer-wrap">
+					<div id="outer-front" class="outer">
+						<div id="outer">
+
+							<header>
+								<h1>gus glover</h1>
+								<p id="navigation"><a class="section-link">about</a> | <a class="section-link">projects</a> | <a class="section-link">contact</a></p>
+								<canvas id="main-slider" width="300" height="10"></canvas>
+								<p>~ ~ ~</p>
+							</header>
+
+							<section id="about-section">
+								<img class="portrait" src="images/main.png"/>	
+								<p></p>
+							</section>
+
+							<section id="projects-section">
+
+								<script type="text/template" id="project-template">
+										<div data-name="<%= name %>" class="project-icon" style="background-image:url('/images/icons/<%= name %>-icon.png')"></div>
+								</script>
+								<script type="text/template" id="description-template">
+										<strong><a href="<%= link %>"><%= name %>:</a></strong>
+										<%=description %>
+										<a href="<%= github %>"> ~gh </a>
+								</script>
+
+								<div id="main-projects">
+								</div>
+
+								<hr/>
+								
+								<p>
+									<a href="/v1">home_v1</a> | <a href="/v2">home_v2</a>
+								</p>
+							</section>
+
+							<section id="contact-section">
+								<p>
+								<a href="http://www.github.com/gglover">github</a> |
+								<a href="mailto:gglover@uw.edu">gglover@uw.edu</a> | 
+								<a href="http://www.last.fm/user/Asparagus22">last.fm</a>
+								</p>
+							</section>
+
+							<footer></footer>
+						</div>
+					</div>
+					<div id="outer-right" class="outer"></div>
+					<div id="outer-left" class="outer"></div>
+					<div id="outer-top" class="outer"></div>
+					<div id="outer-bottom" class="outer"></div>
+					<div id="outer-back" class="outer"></div>
+				</div>
+				<div id="cubes" class="bg-content"></div>
+			</div>
+		</div>
+
+		<div id="bg-controls">
+			<a class="bg-control" data-bg="boring">a</a>
+			<a class="bg-control" data-bg="cubes">b</a>
+			<a class="bg-control" data-bg="ascii">c</a>
+		</div>
+
+	</body>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" rel="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js" rel="text/javascript"></script>
+	<script src="javascripts/section_slider.js" rel="text/javascript"></script>
+	<script src="javascripts/backgrounds/background_manager.js" rel="text/javascript"></script>
+	<script src="javascripts/main.js" rel="text/javascript"></script>
+
+	<!-- Analytics blurb -->
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-46781516-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
+</html>
