@@ -163,5 +163,9 @@ footer img {
 	ul {
 		-webkit-padding-start: 5px;
 	}
+
+	#audio-album {
+		display: none;
+	}
 }
 
