@@ -148,6 +148,11 @@ footer {
 	display: inline-block;
 	max-width: 50%;
 	min-width: 110px;
+	vertical-align: top;
+}
+
+.footer-focus span {
+	text-overflow: clip;
 }
 
 footer img {
