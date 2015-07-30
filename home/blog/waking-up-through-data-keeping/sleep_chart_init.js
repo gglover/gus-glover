@@ -1,3 +1,10 @@
+/* DATA: 
+bed times  : 1230 130, 
+alarm times:  730 800, 
+rise times :  830 905, 
+*/
+
+
 var data = {
     labels: ["7/28", "7/29", "7/30", "7/31", "8/1"],
     datasets: [

@@ -1,22 +1,9 @@
 html, body {
 	height: 100%;
+	margin: 0;
 }
 
 body {
-	/*font-family: 'Helvetica Neue', Helvetica, Sans-serif;*/
-	font-weight: 400;
-	color: #575757;
-	height: 100vh;
-	margin: 0;
-	overflow-x: hidden;
-}
-
-body::after {
-	content: '';
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
 	background: repeating-linear-gradient(
 	  90deg,
 	  #808080,
@@ -24,7 +11,13 @@ body::after {
 	  #fff 2px,
 	  #fff 4px
 	);
-	width: 18px;
+	padding-left: 18px;
+	overflow-x: hidden;
+}
+
+#content {
+	width: calc(100vw - 18px);
+	background-color: white;
 }
 
 header::after, footer::before {
@@ -38,8 +31,8 @@ header::after, footer::before {
 	  #fff 2px,
 	  #fff 4px
 	);
-	width: 522px;
-	max-width: 100%;
+	width: 510px;
+	max-width: calc(100vw - 26px);
 	left: 26px;
 	border-left: 2px solid #808080;
 }
@@ -83,7 +76,6 @@ header, footer, main {
 	max-width: 500px;
 	background-color: white;
 	padding-left: 20px;
-	margin-left: 26px;
 	overflow: hidden;
 }
 
@@ -111,11 +103,25 @@ p {
 h2 {
 	position: relative;
 	background-color: white;
+	margin-left: 10px;
 }
 
 h1 {
 	font-size: 30pt;
 	margin: 20px 0 0 0;
+}
+
+h1 a, h1 a:visited {
+	text-decoration: none;
+	color: #575757;
+}
+
+a {
+	color: #2A5880;
+}
+
+a:visited {
+	color: #565087;
 }
 
 #tagline {
