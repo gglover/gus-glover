@@ -13,6 +13,8 @@ body {
 	);
 	padding-left: 18px;
 	overflow-x: hidden;
+	color: #575757;
+	font-family: 'Times New Roman', serif;
 }
 
 #content {
@@ -92,10 +94,6 @@ header span {
 	font-size: 10pt;
 }
 
-p, li, span {
-	font-family: serif;
-}
-
 p {
 	margin-top: 1.68em;
 }
@@ -149,6 +147,12 @@ footer {
 	max-width: 50%;
 	min-width: 110px;
 	vertical-align: top;
+	transition: opacity 1s;
+	opacity: 1.0;
+}
+
+.footer-focus.hidden {
+	opacity: 0.0;
 }
 
 .footer-focus span {
@@ -157,6 +161,12 @@ footer {
 
 footer img {
 	float: left;
+}
+
+@keyframes {
+	to {
+
+	}
 }
 
 @media (max-width: 500px) {

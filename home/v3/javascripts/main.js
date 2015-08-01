@@ -3,12 +3,11 @@ var GUS = {
 	PROJECTS_PER_ROW: 4,
 
 	initialize: function() {
-		var sectionToShow = GUS.parseSection();
-		GUS.loadSection(sectionToShow);
-		GUS.wireEvents(sectionToShow);
+		GUS.loadSection('about');
+		GUS.wireEvents('about');
 		GUS.renderProjects();
 		GUS.setContentBounds();
-		GUS.changeBackground('boring');
+		GUS.changeBackground('cubes');
 	},
 
 	wireEvents: function(sectionToShow) {
@@ -32,7 +31,6 @@ var GUS = {
 	handleSectionChange: function(e) {
 		var sect = $(e.currentTarget).text();
 		GUS.loadSection(sect);
-		history.replaceState({}, "~ ~ ~", sect);
 	},
 
 	handleProjectChange: function(e, section) {
