@@ -2,6 +2,7 @@
 
 $description = "Seattle kid's thoughts and creative ventures.";
 $title = "Gus Glover";
+$scripts = array();
 
 include_once('partials/header.php');
 

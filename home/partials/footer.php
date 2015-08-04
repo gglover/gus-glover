@@ -1,4 +1,5 @@
 </main>
+<div class="divider large"></div>
 <footer>
 
 				<div class="footer-focus">

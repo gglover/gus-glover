@@ -1,0 +1,18 @@
+.chart-container {
+	width: 100%;
+	margin-top: -20px;
+}
+
+#attempts-list dd {
+	font-weight: bold;
+}
+
+#total-hours em, #attempts-list dd {
+	color: #b35151;
+}
+
+
+.date {
+	font-size: 10pt;
+	color: #808080;
+}
