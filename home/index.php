@@ -32,7 +32,7 @@ creative output.
 <h2>Blog</h2>
 <ul>
 	<li>
-		<a href="/blog/waking-up-through-data-keeping/">Waking up through data keeping</a>
+		<a href="/blog/curing-wasted-mornings/">Curing wasted mornings</a>
 		<span class="date">july 2015</span>
 	</li>
 </ul>
