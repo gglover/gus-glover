@@ -20,6 +20,15 @@ h1 a, h1 a:visited {
 
 #tagline {
 	margin: -5px 0 10px 0;
+	cursor: pointer;
+}
+
+#tagline img {
+	width: 12px;
+	height: 12px;
+	margin: 2px;
+	vertical-align: middle;
+	opacity: 0.7;
 }
 
 header span {
@@ -126,25 +135,6 @@ footer img {
 	-webkit-filter: grayscale(30%);
 }
 
-
-
-
-@media (max-width: 500px) {
-	ul {
-		-webkit-padding-start: 5px;
-	}
-
-	#audio-album {
-		display: none;
-	}
-
-
-	#content, body {
-		width: 100%;
-	}
-}
-
-
 .divider {
 	height: 12px;
 	background: repeating-linear-gradient(
@@ -202,3 +192,21 @@ h2::after {
   top: 8px;
 }
 
+
+
+
+
+@media (max-width: 500px) {
+	ul {
+		-webkit-padding-start: 5px;
+	}
+
+	#audio-album {
+		display: none;
+	}
+
+
+	#content, body, .divider {
+		width: 100%;
+	}
+}

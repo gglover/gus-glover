@@ -10,7 +10,6 @@
 
 		<link href="/general.css" type="text/css" rel="stylesheet" />
 		<link href="/specific.css" type="text/css" rel="stylesheet" />
-		<script src="/audio.js" type="text/javascript"></script>
 
 		<link rel="icon" type="image/png" href="/images/favicon.png">
 	</head>

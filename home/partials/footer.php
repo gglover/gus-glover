@@ -16,6 +16,8 @@
 			</footer>
 		</div>
 
+		<script src="/index.js" type="text/javascript"></script>
+		
 		<?php foreach ($scripts as $script): ?>
 			<script src="<?= $script ?>" type="text/javascript"></script>
 		<?php endforeach; ?>
