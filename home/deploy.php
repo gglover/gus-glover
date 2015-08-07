@@ -12,6 +12,7 @@
 	$body=@file_get_contents('php://input');
 	// The commands
 	$commands = array(
+		'cd /www/gus_homepage/',
 		'git pull origin master',
 		'git submodule sync',
 		'git submodule update'
