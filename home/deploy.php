@@ -58,5 +58,4 @@
 	    } 
 	    return $result === 0;
 	}
-	echo "Deploy successful."
 ?>
