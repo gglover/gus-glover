@@ -8,7 +8,7 @@ include_once('partials/header.php');
 
 ?>
 
-<!-- How did he make those stripes, what the hell? -->
+<!-- How did he make those stripes, what the hell? It looks horrible to me. -->
 
 <p>
 I'm a fresh graduate of the University of Washington currently bumbling through the early trials of entrepreneurship. Welcome to the hub for all my 
