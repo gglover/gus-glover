@@ -11,12 +11,15 @@ include_once('partials/header.php');
 <!-- How did he make those stripes, what the hell? It looks horrible to me. -->
 
 <p>
-I'm a fresh graduate of the University of Washington currently bumbling through the early trials of entrepreneurship. Welcome to the hub for all my 
-creative output.
+I'm a fresh graduate of the University of Washington currently bumbling through the early trials of entrepreneurship. Welcome to the hub for all my creative output.
 </p>
 
 <h2>Projects</h2>
 <ul>
+	<li>
+		<a href="https://hometown.football">hometown.football</a>
+		<span class="date">april 2016</span>
+	</li>
 	<li>
 		<a href="http://twootwith.me">twootwith.me</a>
 		<span class="date">december 2014</span>
@@ -31,13 +34,13 @@ creative output.
 	</li>
 </ul>
 
-<h2>Blog</h2>
+<!-- <h2>Blog</h2>
 <ul>
 	<li>
 		<a href="/blog/curing-wasted-mornings/">Curing wasted mornings</a>
 		<span class="date">july 2015</span>
 	</li>
-</ul>
+</ul> -->
 
 <h2>The Dump</h2>
 <ul>
