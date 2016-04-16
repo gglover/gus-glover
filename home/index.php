@@ -18,7 +18,7 @@ I'm a fresh graduate of the University of Washington currently bumbling through 
 <ul>
 	<li>
 		<a href="https://hometown.football">hometown.football</a>
-		<span class="date">april 2016</span>
+		<span class="date">★ april 2016</span>
 	</li>
 	<li>
 		<a href="http://twootwith.me">twootwith.me</a>
@@ -30,7 +30,7 @@ I'm a fresh graduate of the University of Washington currently bumbling through 
 	</li>
 	<li>
 		<a href="http://pokepalettes.com">pokepalettes.com</a>
-		<span class="date">may 2014</span>
+		<span class="date">★ may 2014</span>
 	</li>
 </ul>
 
