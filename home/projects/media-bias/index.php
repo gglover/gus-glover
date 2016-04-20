@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <section id="npr"></section>
+    <section id="cnn"></section>
+    <section id="nyt"></section>
     <section id="msnbc"></section>
   </body>
 

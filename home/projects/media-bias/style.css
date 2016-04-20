@@ -6,6 +6,10 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+ul {
+  -webkit-padding-start: 0px;
+}
+
 li {
   display: inline-block;
   list-style: none;
@@ -18,6 +22,11 @@ li {
 
 li strong {
   font-size: 12px
+}
+
+section {
+  margin-bottom: 80px;
+  max-width: 700px
 }
 
 .mild {
