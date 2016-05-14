@@ -1,7 +1,7 @@
 <?php
 
 $description = "An ongoing log of modern garments tailored together from Goodwill bargain racks.";
-$title = "Goodwill Alterations: Block Jumper | Gus Glover";
+$title = "Goodwill Alterations: Getting Started | Gus Glover";
 $scripts = array();
 
 include_once('../../partials/header.php');

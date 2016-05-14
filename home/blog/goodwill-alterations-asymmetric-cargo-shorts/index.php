@@ -87,8 +87,6 @@ include_once('../../partials/header.php');
   <img src="images/left_side.jpg">
 </a>
 
-
-
 <?php
 
 include_once('../../partials/footer.php');
