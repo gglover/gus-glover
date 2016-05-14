@@ -11,7 +11,7 @@ include_once('partials/header.php');
 <!-- How did he make those stripes, what the hell? It looks horrible to me. -->
 
 <p>
-I'm a fresh graduate of the University of Washington currently bumbling through the early trials of entrepreneurship. Welcome to the hub for all my creative output.
+I'm a fresh graduate of the University of Washington currently bumbling through the early trials of entrepreneurship. There's some programming on here and a bit of sewing.
 </p>
 
 <h2>Projects</h2>
@@ -34,19 +34,30 @@ I'm a fresh graduate of the University of Washington currently bumbling through 
 	</li>
 </ul>
 
-<!-- <h2>Blog</h2>
+<h2>Blog</h2>
 <ul>
 	<li>
-		<a href="/blog/curing-wasted-mornings/">Curing wasted mornings</a>
-		<span class="date">july 2015</span>
+		<a href="/blog/goodwill-alterations-getting-started/">Goodwill Alterations: Getting Started</a>
+		<span class="date">april 2016</span>
 	</li>
-</ul> -->
+
+	<li>
+		<a href="/blog/goodwill-alterations-block-jumper/">Goodwill Alterations: Block Jumper</a>
+		<span class="date">april 2016</span>
+	</li>
+
+	<li>
+		<a href="/blog/goodwill-alterations-asymmetric-cargo-shorts/">Goodwill Alterations: Asymmetric Cargo Shorts</a>
+		<span class="date">may 2016</span>
+	</li>
+</ul>
 
 <h2>The Dump</h2>
 <ul>
 	<li><a href="/projects/tower-defense">A game on the moon</a></li>
 	<li><a href="/projects/human-tetris">Human tetris with your webcam</a></li>
 	<li><a href="/freelance">Freelance hype page</a></li>
+	<li><a href="https://s3-eu-west-1.amazonaws.com/english-football/poster.png">Big ol' Football Poster</a></li>
 	<li><a href="/v1">Baby's first website</a></li>
 	<li><a href="/v2">Teen's HS intro to web dev final</a></li>
 	<li><a href="/v3">College student discovers HTML5</a></li>

@@ -11,6 +11,10 @@
 	color: #b35151;
 }
 
+.expense-total {
+  padding-top: 20px;
+  font-size: 20px;
+}
 
 .date {
 	font-size: 10pt;

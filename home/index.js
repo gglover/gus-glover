@@ -24,6 +24,6 @@ var globeNum = Math.floor(Math.random() * numGlobes);
 
 document.querySelectorAll('#tagline em')[0].onclick = function(e) {
 	e.currentTarget.innerHTML = e.currentTarget.innerHTML + '<img src="' +
-		'images/globes/globe' + globeNum + '.gif"/>';
+		'/images/globes/globe' + globeNum + '.gif"/>';
 	globeNum = (globeNum + 1) % numGlobes;
 };
