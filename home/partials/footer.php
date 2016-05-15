@@ -4,7 +4,7 @@
 
 				<div class="footer-focus">
 					<a href="/"><img class="icon" src="/images/gus_icon.png"/></a>
-					<a href="mailto:gglover@uw.edu">email</a><br/>
+					<a href="mailto:gusgloverweb@gmail.com">email</a><br/>
 					<a href="https://github.com/gglover">github</a>
 				</div>
 
