@@ -18,7 +18,7 @@
 
 		<div id="content">
 			<header>
-				<h1><a href="/">Gus Glover</a></h1>
+				<h1><a href="/">gus glover</a></h1>
 				<div id="tagline">
 					<em>~world headquarters</em>
 				</div>

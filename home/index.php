@@ -10,11 +10,11 @@ include_once('partials/header.php');
 
 <!-- How did he make those stripes, what the hell? It looks horrible to me. -->
 
-<p>
+<!-- <p>
 I'm a fresh graduate of the University of Washington currently bumbling through the early trials of entrepreneurship. There's some programming on here and a bit of sewing.
-</p>
+</p> -->
 
-<h2>Projects</h2>
+<h2>projects</h2>
 <ul>
 	<li>
 		<a href="https://hometown.football">hometown.football</a>
@@ -34,8 +34,12 @@ I'm a fresh graduate of the University of Washington currently bumbling through 
 	</li>
 </ul>
 
-<h2>Blog</h2>
+<h2>blog</h2>
 <ul>
+	<li>
+		<a href="/blog/goodwill-alterations-two-tone-polo/">Goodwill Alterations: Two-tone Polo</a>
+		<span class="date">april 2016</span>
+	</li>
 	<li>
 		<a href="/blog/goodwill-alterations-asymmetric-cargo-shorts/">Goodwill Alterations: Asymmetric Cargo Shorts</a>
 		<span class="date">may 2016</span>
@@ -50,7 +54,7 @@ I'm a fresh graduate of the University of Washington currently bumbling through 
 	</li>
 </ul>
 
-<h2>The Dump</h2>
+<h2>the dump</h2>
 <ul>
 	<li><a href="/projects/tower-defense">A game on the moon</a></li>
 	<li><a href="/projects/human-tetris">Human tetris with your webcam</a></li>

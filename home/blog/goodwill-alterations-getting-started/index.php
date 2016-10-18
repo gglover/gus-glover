@@ -26,17 +26,17 @@ include_once('../../partials/header.php');
 <p>I bought my first machine secondhand for $25. Obviously it had quite a few issues or it wouldn't have been sitting in the bargain rack. The light was broken, it was missing a foot and the tension knob was locked at one grip setting. <a href="http://www.sewingpartsonline.com/singer-sewing-machine-parts-model-list.aspx">This site</a> was immensely helpful for my parts issues and seems to be comprehensive enough to cover any used machine you'd come across. I fixed the tension by pulling the cap off and cleaning between the grip plates. Thanks to the wealth of <a href="https://www.youtube.com/watch?v=og0WnNQym6A&index=1&list=PLeEMs9XJguBSu-UyFztsRI4uhUjyXsdoy">grandma-hosted Youtube series</a> available to me I was able to learn enough to get started fairly quickly. What I couldn't get secondhand I caved and bought from Jo-ann fabrics which is generally a bit pricey.</p>
 
 <figure class="three column">
-  <a href="#supplies1"><img src="images/supplies1_thumb.jpg"/></a>
+  <img data-lightbox="supplies1" src="images/supplies1_thumb.jpg"/>
   <figcaption></figcaption>
 </figure>
 
 <figure class="three column">
-  <a href="#supplies2"><img src="images/supplies2_thumb.jpg"/></a>
+  <img data-lightbox="supplies2" src="images/supplies2_thumb.jpg"/>
   <figcaption></figcaption>
 </figure>
 
 <figure class="three column">
-  <a href="#supplies3"><img src="images/supplies3_thumb.jpg"/></a>
+  <img data-lightbox="supplies3" src="images/supplies3_thumb.jpg"/>
   <figcaption></figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ include_once('../../partials/header.php');
 <p>My friend reccomended taking an old shirt, hacking it apart and then reconstructing it as a first project. Thankfully I happened to own this piece of garbage.</p>
 
 <figure class="two column centered">
-  <a href="#original"><img src="images/original_thumb.jpg"/></a>
+  <img data-lightbox="original" src="images/original_thumb.jpg"/>
   <figcaption>I have more of these if you want one</figcaption>
 </figure>
 
@@ -73,12 +73,12 @@ include_once('../../partials/header.php');
 <h2>The Project</h2>
 
 <figure class="two column">
-  <a href="#first_try"><img src="images/first_try_thumb.jpg"/></a>
+  <img data-lightbox="first_try" src="images/first_try_thumb.jpg"/>
   <figcaption>Snorgtees.com X gyro shop curains</figcaption>
 </figure>
 
 <figure class="two column">
-  <a href="#first_try_detail"><img src="images/first_try_detail.jpg"/></a>
+  <img data-lightbox="first_try_detail" src="images/first_try_detail.jpg"/>
   <figcaption>Extremely stylish contrast pocket</figcaption>
 </figure>
 
@@ -88,29 +88,29 @@ include_once('../../partials/header.php');
 
 <p>Gus ~ 4/10/2016</p>
 
-<a href="#~" class="lightbox" id="first_try">
+<div class="lightbox" id="first_try">
   <img src="images/first_try.jpg">
-</a>
+</div>
 
-<a href="#~" class="lightbox" id="first_try_detail">
+<div class="lightbox" id="first_try_detail">
   <img src="images/first_try_detail.jpg">
-</a>
+</div>
 
-<a href="#~" class="lightbox" id="supplies1">
+<div class="lightbox" id="supplies1">
   <img src="images/supplies1.jpg">
-</a>
+</div>
 
-<a href="#~" class="lightbox" id="supplies2">
+<div class="lightbox" id="supplies2">
   <img src="images/supplies2.jpg">
-</a>
+</div>
 
-<a href="#~" class="lightbox" id="supplies3">
+<div class="lightbox" id="supplies3">
   <img src="images/supplies3.jpg">
-</a>
+</div>
 
-<a href="#~" class="lightbox" id="original">
+<div class="lightbox" id="original">
   <img src="images/original.jpg">
-</a>
+</div>
 
 <?php
 
