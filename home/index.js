@@ -15,7 +15,7 @@
 
   }
 
-  xhr.open('GET', 'http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=asparagus22&api_key=4c03a43d3709a1bba02e2bb88c16f959&format=json&limit=5', true);
+  xhr.open('GET', 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=asparagus22&api_key=4c03a43d3709a1bba02e2bb88c16f959&format=json&limit=5', true);
   xhr.send(null);
 
 
