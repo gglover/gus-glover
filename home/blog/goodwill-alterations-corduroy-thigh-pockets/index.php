@@ -8,10 +8,13 @@ include_once('../../partials/header.php');
 
 ?>
 
+<h1>Corduroy Thigh Pockets</h1>
+<h4>Goodwill Alterations #5 | <a href="/blog/goodwill-alterations-two-tone-polo">< prev</a></h4>
+
 
 <?php
 
-$columns = "two centered";
+$columns = "one centered";
 $image = "inspiration";
 $caption = "";
 include('../../partials/lightbox_img.php');
@@ -39,14 +42,18 @@ include('../../partials/lightbox_img.php');
 
 ?>
 
+<div class="expense-total">Total Expenses: <strong>$10.98</strong></div>
+
+<h2>The Project</h2>
+
 <?php
 
-$columns = "two";
-$image = "final";
+$columns = "one";
+$image = "final_front";
 $caption = "";
 include('../../partials/lightbox_img.php');
 
-$columns = "two";
+$columns = "one";
 $image = "final_angle";
 $caption = "";
 include('../../partials/lightbox_img.php');
