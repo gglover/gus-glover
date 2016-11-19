@@ -13,8 +13,8 @@ include_once('partials/header.php');
 <h2>projects</h2>
 <ul>
 	<li>
-		<a href="https://hometown.football">hometown.football</a>
-		<span class="date">★ april 2016</span>
+		<a href="https://hometown.football">hometown.football</a><small> ★</small>
+		<span class="date">april 2016</span>
 	</li>
 	<li>
 		<a href="http://twootwith.me">twootwith.me</a>
@@ -25,8 +25,8 @@ include_once('partials/header.php');
 		<span class="date">september 2014</span>
 	</li>
 	<li>
-		<a href="http://pokepalettes.com">pokepalettes.com</a>
-		<span class="date">★ may 2014</span>
+		<a href="http://pokepalettes.com">pokepalettes.com</a><small> ★</small>
+		<span class="date">may 2014</span>
 	</li>
 </ul>
 

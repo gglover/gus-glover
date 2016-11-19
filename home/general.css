@@ -5,6 +5,7 @@ html, body {
 
 #content {
 	margin: auto;
+  margin-top: 20px;
 	width: 520px;
 	overflow-x: hidden;
 	color: #575757;
@@ -62,12 +63,11 @@ p {
 h2 {
 	position: relative;
 	background-color: white;
-	margin-left: 10px;
 }
 
 h1 {
 	font-size: 30pt;
-	margin: 20px 0 0 0;
+	margin: 0;
 }
 
 h4 {
@@ -242,8 +242,8 @@ h2::before {
   content: '';
   height: 12px;
   position: absolute;
-  width: 17px;
-  left: -22px;
+  width: 6px;
+  left: -10px;
   top: 8px;
   z-index: 10;
   border-left: 2px solid #808080;

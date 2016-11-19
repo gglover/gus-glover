@@ -1,23 +1,23 @@
 </main>
-<div class="divider large"></div>
+<div class="divider"></div>
 <footer>
+	<div class="footer-focus">
+		<a href="/"><img class="icon" src="/images/gus_icon.png"/></a>
+		<a href="mailto:gusgloverweb@gmail.com">email</a><br/>
+		<a href="https://github.com/gglover">github</a>
+	</div>
 
-				<div class="footer-focus">
-					<a href="/"><img class="icon" src="/images/gus_icon.png"/></a>
-					<a href="mailto:gusgloverweb@gmail.com">email</a><br/>
-					<a href="https://github.com/gglover">github</a>
-				</div>
-
-				<div id="audio" class="hidden footer-focus">
-					<a href="http://www.last.fm/user/Asparagus22"><img class="icon" id="audio-album-cover"/></a>
-					<span id="audio-song"></span><br/>
-					<span id="audio-album"></span>
-				</div>
-			</footer>
-		</div>
+	<div id="audio" class="hidden footer-focus">
+		<a href="http://www.last.fm/user/Asparagus22"><img class="icon" id="audio-album-cover"/></a>
+		<span id="audio-song"></span><br/>
+		<span id="audio-album"></span>
+	</div>
+</footer>
+<div class="divider large" style="margin-bottom: 20px;"></div>
+</div>
 
 		<script src="/index.js" type="text/javascript"></script>
-		
+
 		<?php foreach ($scripts as $script): ?>
 			<script src="<?= $script ?>" type="text/javascript"></script>
 		<?php endforeach; ?>
