@@ -33,16 +33,17 @@ include_once('partials/header.php');
   <h2>Projects</h2>
     <p><strong><a href="https://hometown.football">hometown.football</a></strong> <span class="date">April 2016</span></p>
     <ul>
-      <li>Web platform for managing large datasets from public organizations.</li>
-      <li>UI redesign for creating and editing data visualizations.</li>
-      <li>Improved page load times and implemented responsive, live reloads of chart/graph editor.</li>
+      <li>Catalog of 368 clubs across 8 tiers of English Football.</li>
+      <li>Node frontend with internal Rails app for managing scraped data and user submitted images.</li>
+      <li>Advanced integration with Google Maps and Streetview APIs.</li>
     </ul>
     <p><strong><a href="http://pokepalettes.com">pokepalettes.com</a></strong> <span class="date">May 2014</span></p>
     <ul>
       <li>Popular color palette generator with ~400 daily users.</li>
       <li>Used Backbone with &lt;canvas&gt;. Fully optimized for mobile.</li>
     </ul>
-    <!-- <h5>Full catalog of hosted projects at <a href="https://gus.today">gus.today</a></h5> -->
+    <br/>
+    <p>Full catalog of hosted projects at <a href="https://gus.today">gus.today</a></p>
 
   <h2>Work Experience</h2>
     <p><strong>Freelance</strong> <span class="date">June 2015 - Current</span></p>
@@ -53,9 +54,8 @@ include_once('partials/header.php');
     </ul>
     <p><strong><a href="http://zumobi.com/">Zumobi Inc.</a></strong> <span class="date">June 2014 - December 2014</span></p>
     <ul>
-      <li>UI redesign for creating and editing data visualizations.</li>
       <li>Wrote internal tools to automate VAST Ad tag analysis and compliance.</li>
-      <li>Improved page load times and implemented responsive, live reloads of chart/graph editor.</li>
+      <li>Worked with large rails codebase for magazine publishing app. Wrote comprehensive RSpec test suite.</li>
     </ul>
     <p><strong><a href="https://socrata.com/">Socrata Inc.</a></strong> <span class="date">June 2013 - September 2013</span></p>
     <ul>
