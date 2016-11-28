@@ -3,7 +3,7 @@
 <footer>
 	<div class="footer-focus">
 		<a href="/"><img class="icon" src="/images/gus_icon.png"/></a>
-		<a href="mailto:gusgloverweb@gmail.com">email</a><br/>
+		<a href="mailto:gg@gus.today">email</a><br/>
 		<a href="https://github.com/gglover">github</a>
 	</div>
 
