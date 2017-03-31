@@ -38,3 +38,17 @@
 #resume p em {
   float: right;
 }
+
+@media print {
+  #resume h2::before {
+    content: none;
+  }
+
+  #resume h2 {
+    margin: 10px 0;
+  }
+
+  .divider {
+    display: none;
+  }
+}
