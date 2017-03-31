@@ -1,6 +1,6 @@
 <?php
 
-$description = "___________⛵____________";
+$description = "okay ready?";
 $title = "Gus Glover";
 $scripts = array();
 
@@ -17,7 +17,7 @@ include_once('partials/header.php');
 		<span class="date">april 2016</span>
 	</li>
 	<li>
-		<a href="http://twootwith.me">multi tweet</a>
+		<a href="http://192.241.239.58:3000/">multi tweet</a>
 		<span class="date">december 2014</span>
 	</li>
 	<li>
@@ -27,6 +27,10 @@ include_once('partials/header.php');
 	<li>
 		<a href="http://pokepalettes.com">pokepalettes.com</a><small> ★</small>
 		<span class="date">may 2014</span>
+	</li>
+	<li>
+		<a href="/projects/tower-defense">a strange game on the moon</a>
+		<span class="date">june 2013</span>
 	</li>
 </ul>
 
@@ -56,7 +60,6 @@ include_once('partials/header.php');
 
 <h2>the dump</h2>
 <ul>
-	<li><a href="/projects/tower-defense">A game on the moon</a></li>
 	<li><a href="/projects/human-tetris">Human tetris with your webcam</a></li>
 	<li><a href="/freelance">Freelance hype page</a></li>
 	<li><a href="https://s3-eu-west-1.amazonaws.com/english-football/poster.png">Big ol' Football Poster</a></li>
