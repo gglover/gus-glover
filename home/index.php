@@ -13,7 +13,7 @@ include_once('partials/header.php');
 <h2>projects</h2>
 <ul>
 	<li>
-		<a href="https://hometown.football">hometown.football</a><small> ★</small>
+		<a href="https://hometown.football/wycombe-wanderers-fc">hometown.football</a><small> ★</small>
 		<span class="date">april 2016</span>
 	</li>
 	<li>
