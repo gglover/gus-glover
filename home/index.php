@@ -1,6 +1,6 @@
 <?php
 
-$description = "Seattle kid's thoughts and creative ventures.";
+$description = "okay ready?";
 $title = "Gus Glover";
 $scripts = array();
 
@@ -8,20 +8,16 @@ include_once('partials/header.php');
 
 ?>
 
-<!-- How did he make those stripes, what the hell? It looks horrible to me. -->
+<!-- How did he make those stripes, what the heck? It looks horrible to me. -->
 
-<p>
-I'm a fresh graduate of the University of Washington currently bumbling through the early trials of entrepreneurship. There's some programming on here and a bit of sewing.
-</p>
-
-<h2>Projects</h2>
+<h2>projects</h2>
 <ul>
 	<li>
-		<a href="https://hometown.football">hometown.football</a>
-		<span class="date">★ april 2016</span>
+		<a href="https://hometown.football/wycombe-wanderers-fc">hometown.football</a><small> ★</small>
+		<span class="date">april 2016</span>
 	</li>
 	<li>
-		<a href="http://twootwith.me">twootwith.me</a>
+		<a href="http://192.241.239.58:3000/">multi tweet</a>
 		<span class="date">december 2014</span>
 	</li>
 	<li>
@@ -29,14 +25,18 @@ I'm a fresh graduate of the University of Washington currently bumbling through 
 		<span class="date">september 2014</span>
 	</li>
 	<li>
-		<a href="http://pokepalettes.com">pokepalettes.com</a>
-		<span class="date">★ may 2014</span>
+		<a href="http://pokepalettes.com">pokepalettes.com</a><small> ★</small>
+		<span class="date">may 2014</span>
+	</li>
+	<li>
+		<a href="/projects/tower-defense">a strange game on the moon</a>
+		<span class="date">june 2013</span>
 	</li>
 </ul>
 
-<h2>The Dump</h2>
+<h2>the dump</h2>
+
 <ul>
-	<li><a href="/projects/tower-defense">A game on the moon</a></li>
 	<li><a href="/projects/human-tetris">Human tetris with your webcam</a></li>
 	<li><a href="/freelance">Freelance hype page</a></li>
 	<li><a href="https://s3-eu-west-1.amazonaws.com/english-football/poster.png">Big ol' Football Poster</a></li>

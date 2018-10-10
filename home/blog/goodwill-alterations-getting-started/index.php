@@ -25,20 +25,24 @@ include_once('../../partials/header.php');
 
 <p>I bought my first machine secondhand for $25. Obviously it had quite a few issues or it wouldn't have been sitting in the bargain rack. The light was broken, it was missing a foot and the tension knob was locked at one grip setting. <a href="http://www.sewingpartsonline.com/singer-sewing-machine-parts-model-list.aspx">This site</a> was immensely helpful for my parts issues and seems to be comprehensive enough to cover any used machine you'd come across. I fixed the tension by pulling the cap off and cleaning between the grip plates. Thanks to the wealth of <a href="https://www.youtube.com/watch?v=og0WnNQym6A&index=1&list=PLeEMs9XJguBSu-UyFztsRI4uhUjyXsdoy">grandma-hosted Youtube series</a> available to me I was able to learn enough to get started fairly quickly. What I couldn't get secondhand I caved and bought from Jo-ann fabrics which is generally a bit pricey.</p>
 
-<figure class="three column">
-  <a href="#supplies1"><img src="images/supplies1_thumb.jpg"/></a>
-  <figcaption></figcaption>
-</figure>
+<?php
 
-<figure class="three column">
-  <a href="#supplies2"><img src="images/supplies2_thumb.jpg"/></a>
-  <figcaption></figcaption>
-</figure>
+$columns = "three";
+$image = "supplies1";
+$caption = "";
+include('../../partials/lightbox_img.php');
 
-<figure class="three column">
-  <a href="#supplies3"><img src="images/supplies3_thumb.jpg"/></a>
-  <figcaption></figcaption>
-</figure>
+$columns = "three";
+$image = "supplies2";
+$caption = "";
+include('../../partials/lightbox_img.php');
+
+$columns = "three";
+$image = "supplies3";
+$caption = "";
+include('../../partials/lightbox_img.php');
+
+?>
 
 <ul>
   <li>Self-healing cutting board <strong>- $35 - Fabric Store</strong></li>
@@ -63,54 +67,38 @@ include_once('../../partials/header.php');
 
 <p>My friend reccomended taking an old shirt, hacking it apart and then reconstructing it as a first project. Thankfully I happened to own this piece of garbage.</p>
 
-<figure class="two column centered">
-  <a href="#original"><img src="images/original_thumb.jpg"/></a>
-  <figcaption>I have more of these if you want one</figcaption>
-</figure>
+<?php
+
+$columns = "two centered";
+$image = "original";
+$caption = "I have more of these if you want one";
+include('../../partials/lightbox_img.php');
+
+?>
 
 <p>There's a million places online that can explain sewing method and technique better than me so I'll try to focus mainly on results.</p>
 
 <h2>The Project</h2>
 
-<figure class="two column">
-  <a href="#first_try"><img src="images/first_try_thumb.jpg"/></a>
-  <figcaption>Snorgtees.com X gyro shop curains</figcaption>
-</figure>
+<?php
 
-<figure class="two column">
-  <a href="#first_try_detail"><img src="images/first_try_detail.jpg"/></a>
-  <figcaption>Extremely stylish contrast pocket</figcaption>
-</figure>
+$columns = "two";
+$image = "first_try";
+$caption = "Snorgtees.com X gyro shop curains";
+include('../../partials/lightbox_img.php');
+
+$columns = "two";
+$image = "first_try_detail";
+$caption = "Extremely stylish contrast pocket";
+include('../../partials/lightbox_img.php');
+
+?>
 
 <p>After the reconstruction it went from an M to a cropped XS. The cheap cotton was a little annoying to work with as it flares up and falls apart as soon as you make a cut. This led to some pretty awful seam allowances that I didn't care to go in and clean up.</p>
 
 <p>It's quite plainly an unwearable rag, given, but I did manage to learn quite a bit by letting loose on an inconsequential project. There's no pressure to get your stitching perfect. I sewed one of the sleeves back on inside out and now I'm keen to keep my sides straight before rushing into stitching. It was a great confidence booster and quelled a lot of my concerns before tackling something of value.</p>
 
 <p>Gus ~ 4/10/2016</p>
-
-<a href="#~" class="lightbox" id="first_try">
-  <img src="images/first_try.jpg">
-</a>
-
-<a href="#~" class="lightbox" id="first_try_detail">
-  <img src="images/first_try_detail.jpg">
-</a>
-
-<a href="#~" class="lightbox" id="supplies1">
-  <img src="images/supplies1.jpg">
-</a>
-
-<a href="#~" class="lightbox" id="supplies2">
-  <img src="images/supplies2.jpg">
-</a>
-
-<a href="#~" class="lightbox" id="supplies3">
-  <img src="images/supplies3.jpg">
-</a>
-
-<a href="#~" class="lightbox" id="original">
-  <img src="images/original.jpg">
-</a>
 
 <?php
 

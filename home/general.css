@@ -5,10 +5,11 @@ html, body {
 
 #content {
 	margin: auto;
+  margin-top: 20px;
 	width: 520px;
 	overflow-x: hidden;
 	color: #575757;
-	font-family: 'Times New Roman', serif;
+	font-family: "Times New Roman", serif;
 }
 
 * {
@@ -62,12 +63,11 @@ p {
 h2 {
 	position: relative;
 	background-color: white;
-	margin-left: 10px;
 }
 
 h1 {
 	font-size: 30pt;
-	margin: 20px 0 0 0;
+	margin: 0;
 }
 
 h4 {
@@ -82,8 +82,9 @@ a:visited {
 	color: #565087;
 }
 
-ul li {
+h1, h2, h3, h4, h5, ul li {
 	list-style: square;
+  text-transform: lowercase;
 }
 
 dt, dd {
@@ -137,6 +138,7 @@ figcaption {
   display: none;
 
   /** Position and style */
+  cursor: pointer;
   position: fixed;
   z-index: 999;
   width: 100%;
@@ -145,6 +147,10 @@ figcaption {
   top: 0;
   left: 0;
   background: rgba(0,0,0,0.8);
+}
+
+.lightbox.expanded {
+  display: block;
 }
 
 .lightbox img {
@@ -236,8 +242,8 @@ h2::before {
   content: '';
   height: 12px;
   position: absolute;
-  width: 17px;
-  left: -22px;
+  width: 6px;
+  left: -10px;
   top: 8px;
   z-index: 10;
   border-left: 2px solid #808080;
@@ -256,7 +262,7 @@ h2::after {
   height: 12px;
   position: absolute;
   width: 100%;
-  margin-left: 6px;
+  margin-left: 2px;
   top: 8px;
 }
 

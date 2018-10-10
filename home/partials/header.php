@@ -17,12 +17,15 @@
 	<body>
 
 		<div id="content">
-			<header>
-				<h1><a href="/">Gus Glover</a></h1>
-				<div id="tagline">
-					<em>~world headquarters</em>
-				</div>
-			</header>
-			<div class="divider large"></div>
+			<?php if (!isset($noBanner)) { ?>
+				<div class="divider large"></div>
+				<header>
+					<h1><a href="/">gus glover</a></h1>
+					<div id="tagline">
+						<em>~world headquarters</em>
+					</div>
+				</header>
+				<div class="divider"></div>
+			<?php } ?>
 
 			<main>

@@ -1,0 +1,7 @@
+Images Sizes
+
+  Full: Both dimensions close to 1500px
+
+  3 Column Thumb: 420x420
+  2 Column Thumb: 500x500
+  1 Column Thumb: 800x800

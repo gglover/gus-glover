@@ -14,9 +14,54 @@
 .expense-total {
   padding-top: 20px;
   font-size: 20px;
+  text-transform: lowercase;
 }
 
 .date {
 	font-size: 10pt;
 	color: #808080;
+  float: right;
+}
+
+#resume h1,  #resume h2, #resume h3, #resume li {
+  text-transform: none;
+}
+
+#resume li {
+  font-size: 10pt;
+}
+
+#resume p, #resume ul {
+  margin: 5px 0;
+}
+
+#resume p em {
+  float: right;
+}
+
+@media print {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #content {
+    width: 90%;
+  }
+  #resume h2::before {
+    content: none;
+  }
+
+  #resume h2 {
+    margin: 10px 0;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
