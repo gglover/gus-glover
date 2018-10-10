@@ -34,22 +34,6 @@ I'm a fresh graduate of the University of Washington currently bumbling through 
 	</li>
 </ul>
 
-<h2>Blog</h2>
-<ul>
-	<li>
-		<a href="/blog/goodwill-alterations-asymmetric-cargo-shorts/">Goodwill Alterations: Asymmetric Cargo Shorts</a>
-		<span class="date">may 2016</span>
-	</li>
-	<li>
-		<a href="/blog/goodwill-alterations-block-jumper/">Goodwill Alterations: Block Jumper</a>
-		<span class="date">april 2016</span>
-	</li>
-	<li>
-		<a href="/blog/goodwill-alterations-getting-started/">Goodwill Alterations: Getting Started</a>
-		<span class="date">april 2016</span>
-	</li>
-</ul>
-
 <h2>The Dump</h2>
 <ul>
 	<li><a href="/projects/tower-defense">A game on the moon</a></li>
